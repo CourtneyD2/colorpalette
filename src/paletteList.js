@@ -38,7 +38,7 @@ class PaletteList extends PureComponent {
   }
 
   goToPalette (id){
-    this.props.history.push(`/palette/${id}`);
+    this.props.history.push(`/colorpalette/palette/${id}`);
   }
  
   render (){
@@ -48,7 +48,7 @@ class PaletteList extends PureComponent {
         <div className={classes.container}>        
           <nav className= {classes.nav}>
             <h1 className={classes.heading}>Palettes</h1>
-            <Link to="/palette/new" onClick={this.props.slideUp}>Create Palette</Link>
+            <Link to="/colorpalette/palette/new" onClick={this.props.slideUp}>Create Palette</Link>
           </nav> 
             <TransitionGroup className={classes.palettes}>
             {palettes.map(

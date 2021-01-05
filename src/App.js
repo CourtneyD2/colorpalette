@@ -73,7 +73,7 @@ class App extends Component {
         <Switch location={location}>
         <Route 
           exact 
-          path="/palette/new" 
+          path="/colorpalette/palette/new" 
           render={
             (routeProps)=> 
                 <Page dir={this.state.dir}   >
@@ -88,7 +88,7 @@ class App extends Component {
         />
         <Route 
           exact 
-          path="/" 
+          path="/colorpalette/" 
           render={
             (routeProps)=><Page dir={this.state.dir} ><PaletteList 
                             deletePalette ={this.deletePalette}
@@ -101,7 +101,7 @@ class App extends Component {
         />
         <Route 
           exact 
-          path="/palette/:id" Page
+          path="/colorpalette/palette/:id" Page
           render= {
             routeProps=><Page dir={this.state.dir} ><Palette
                           format = {this.state.format} 
@@ -113,7 +113,7 @@ class App extends Component {
         />
         <Route 
           exact 
-          path="/palette/:paletteId/:colorId" 
+          path="/colorpalette/palette/:paletteId/:colorId" 
           render={
             (routeProps)=><Page dir={this.state.dir}  ><SCPalette
                             format = {this.state.format}

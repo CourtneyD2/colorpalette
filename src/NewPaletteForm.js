@@ -74,7 +74,7 @@ class NewPaletteForm extends Component {
     newPalette.colors = this.state.colors;
     this.props.savePalette(newPalette);
     this.props.slideDown();
-    this.props.history.push("/");
+    this.props.history.push("/colorpalette/");
   }
   removeColor(colorName) {
     this.setState({

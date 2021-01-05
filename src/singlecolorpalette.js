@@ -34,7 +34,7 @@ class SCPalette extends Component {
          <NavBar handleChange={this.props.handleChange} format={this.props.format} showSlider={false} slideUp={this.props.slideUp} />
          <div className={classes.PaletteColors}>
            {colorbox}
-           <div className={classes.goBack}><Link to={`/palette/${this.props.palette.id}`} onClick={this.props.slideUp}>Go Back</Link></div>
+           <div className={classes.goBack}><Link to={`/colorpalette/palette/${this.props.palette.id}`} onClick={this.props.slideUp}>Go Back</Link></div>
           </div>
          <footer className={classes.PaletteFooter}>{this.props.palette.paletteName}<span className={classes.emoji}>{this.props.palette.emoji}</span></footer>
        </div> 

@@ -38,7 +38,7 @@ class ColorBox extends Component {
              <button className={classes.copyBtn}> Copy </button>
            </div>
            {showLink &&
-           <Link to={`/palette/${paletteID}/${id}`} onClick={e => e.stopPropagation()}>
+           <Link to={`/colorpalette/palette/${paletteID}/${id}`} onClick={e => e.stopPropagation()}>
             <span className ={classes.seeMore}>More</span>
            </Link> 
           }

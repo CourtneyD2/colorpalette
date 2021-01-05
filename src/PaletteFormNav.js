@@ -68,7 +68,7 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.navBtns}>
-            <Link to='/' onClick={this.props.slideDown}>
+            <Link to='/colorpalette/' onClick={this.props.slideDown}>
               <Button
                 variant='contained'
                 color='secondary'

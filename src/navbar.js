@@ -38,7 +38,7 @@ class NavBar extends Component {
     return (
       <header className={classes.NavBar}>
         <div className={classes.logo}>
-          <Link to="/" onClick={this.props.slideUp}>Color Palette</Link>
+          <Link to="/colorpalette/" onClick={this.props.slideUp}>Color Palette</Link>
         </div>
         {showSlider &&
         <div>
